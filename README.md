@@ -17,5 +17,5 @@
 
 ## Lessons
 
-- (22/04/2022) [Lesson 1](./blob/main/Lesson%201/)
-- (07/05/2022) [Lesson 2](./blob/main/Lesson%202/)
+- (22/04/2022) [Lesson 1](./Lesson%201/)
+- (07/05/2022) [Lesson 2](./Lesson%202/)
