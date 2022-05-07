@@ -1,5 +1,6 @@
 # Kiến thức:
 # Các special method cơ bản
+# Link: https://docs.python.org/3/reference/datamodel.html#special-method-names
 # __str__: trả về chuỗi để in ra màn hình
 # __init__: khởi tạo đối tượng
 # __add__: cộng hai đối tượng
@@ -17,6 +18,7 @@
 # __ne__: (not equal) != kiểm tra xem đối tượng này không bằng đối tượng khác
 
 
+# Bài tập trên lớp:
 # Tạo một Class tên là Phân Số
 # Giải thích:
 #   - Class Phân Số có 2 thuộc tính: tử , mẫu
