@@ -25,6 +25,7 @@
 #   - Class Phân Số có các phép tính: +, -, *, /, ** (nhớ rút gọn phân số)
 #   - Class Phân Số so sánh: <, >, <=, >=, ==, !=
 
+import math
 
 
 class PhanSo:
@@ -33,20 +34,60 @@ class PhanSo:
         self.tu = tu
         self.mau = mau
     
+    def rutgon(self):
+        gcd = math.gcd(self.tu, self.mau)
+        self.tu = self.tu // gcd
+        self.mau = self.mau // gcd
+        if(self.mau < 0):
+            self.tu = -self.tu
+            self.mau = -self.mau
+        return self
+
+    def quydong(self, other):
+        self.tu = self.tu * other.mau
+        self.mau = self.mau * other.mau
+    
     def __str__(self):
-        return f"{self.tu}/{self.mau}"
+        return f"({self.tu}/{self.mau})"
     
     def __add__(self, other):
         tu = self.tu * other.mau + other.tu * self.mau
         mau = self.mau * other.mau
-        return PhanSo(tu, mau)
+        return PhanSo(tu,mau).rutgon()
+    
+    def __sub__(self, other):
+        tu = self.tu * other.mau - other.tu * self.mau
+        mau = self.mau * other.mau
+        return PhanSo(tu,mau).rutgon()
+    
+    def __mul__(self, other):
+        tu = self.tu * other.tu
+        mau = self.mau * other.mau
+        return PhanSo(tu,mau).rutgon()
+    
+    def __truediv__(self, other):
+        tu = self.tu * other.mau
+        mau = self.mau * other.tu
+        return PhanSo(tu,mau).rutgon()
+    
+    def __pow__(self, pow):
+        tu = self.tu ** pow
+        mau = self.mau ** pow
+        return PhanSo(tu,mau).rutgon()
 
 
     
 ps1 = PhanSo(3,5)
-ps2 = PhanSo(4,5)
+ps2 = PhanSo(4,6)
 
-ps3 = ps1 + ps2
+ps_add = ps1 + ps2
+ps_sub = ps1 - ps2
+ps_mul = ps1 * ps2
+ps_truediv = ps1 / ps2
+ps_pow = ps2 ** 2
 
-str = f"{ps1} là 1 phân số"
-print(ps3)
+print(ps1,"+",ps2,"=",ps_add)
+print(ps1,"-",ps2,"=",ps_sub)
+print(ps1,"*",ps2,"=",ps_mul)
+print(ps1,"/",ps2,"=",ps_truediv)
+print(ps1,"**",2,"=",ps_pow)
