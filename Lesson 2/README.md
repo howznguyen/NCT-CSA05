@@ -31,3 +31,30 @@ __File Python__: [special_method.py](./special_method.py)
 __Kế thừa là gì__: Kế thừa có thể được định nghĩa là quá trình mà một lớp (class) có được các thuộc tính của một lớp khác. Các thuộc tính đó có thể là một phương thức (method) hoặc một trường (field) nào đó. Lớp được kế thừa sẽ được gọi chung là lớp cha, còn lớp kế thừa sẽ được gọi chung là lớp con.
 
 __File Python__: [inheritance_class.py](./inheritance_class.py)
+
+### Bài Tập Về Nhà
+
+#### Bài 1
+
+- Tạo class `Point2D` với các thuộc tính: `x`, `y`
+    - Viết hàm tính khoang cách giữa 2 điểm 2D
+    - Viết hàm tính `__add__`, `__sub__` cho 2 điểm 2D
+
+- Tạo class `Point3D` kế thừa `Point2D` với các thuộc tính: `x`, `y`, `z`
+    - Viết hàm tính khoảng cách giữa 2 điểm 3D
+    - Viết hàm tính `__add__`, `__sub__` cho 2 điểm 3D
+
+#### Bài 2
+
+- Tạo class `WareHouse` - __Nhà Kho__ với thuộc tính
+    + `_listItems` là một list có key là tên sản phẩm và value là số lượng sản phẩm
+    + `_maximumValue` = 100 là số lượng tối đa của sản phẩm trong kho và không vượt quá giá trị này
+
+- Yêu cầu
+    - Viết hàm tạo đối tượng có tham số _listItems (`__init__`)
+    - Viết hàm tính tổng số lượng các item trong kho (`getAllValues(self)`)
+    - Viết hàm thêm item vào kho, nếu item đã tồn tại thì tăng số lượng lên bằng với số lượng đã nhập (`addItem(self, name, value)`)
+    - Viết hàm lấy item ra khỏi kho, nếu item đã tồn tại thì giảm số lượng lên bằng với số lượng đã nhập, nếu không đủ số thì thông báo cho người dùng biết(`removeItem(self, name, value`))
+    - Viết hàm kiểm tra xem kho đã đầy chưa (`isFull(self)`)
+    - Viết hàm kiểm tra xem kho đã rỗng chưa (`isEmpty(self)`)
+
