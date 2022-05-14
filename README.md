@@ -15,6 +15,19 @@
 - Liên tục mở cam trong suốt giờ học (Trừ một số trường hợp đặt biệt), __nếu không mở sẽ bị đuổi ra khỏi phòng__
 - Bất cứ yêu cầu hoặc thắc mắc nào thì liên hệ với giảng viên hoặc hỏi trực tiếp trong giờ để được giải đáp.
 
+## Danh Sách Học Viên
+
+- [Lê Phúc Minh](https://github.com/Syzen4869/mindx_hw)
+- [Nguyễn Đăng Kiên](#)
+- [Lê Phúc Minh](#)
+- [Nguyễn Đăng Kiên](#)
+- [Trần Khiêm](https://github.com/tkhiemm/bai-tap-buoi-2/)
+- [Nguyễn Thái Dương](https://github.com/out12348t/nguyenthaiduong)
+- [Phạm Doãn Kiên](https://github.com/Wabbakienph/BTVN-CSA05.git)
+- [Vũ Quốc Hoàng](#)
+- [Hoàng Phúc Sáng](#)
+- [Trần Hữu Vương Duy](#)
+
 ## Lessons
 
 - (22/04/2022) [Lesson 1](./Lesson%201/)
