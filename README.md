@@ -20,11 +20,10 @@
 - [Lê Phúc Minh](https://github.com/Syzen4869/mindx_hw)
 - [Nguyễn Đăng Kiên](#)
 - [Lê Phúc Minh](#)
-- [Nguyễn Đăng Kiên](#)
 - [Trần Khiêm](https://github.com/tkhiemm/bai-tap-buoi-2/)
 - [Nguyễn Thái Dương](https://github.com/out12348t/nguyenthaiduong)
 - [Phạm Doãn Kiên](https://github.com/Wabbakienph/BTVN-CSA05.git)
-- [Vũ Quốc Hoàng](#)
+- [Vũ Quốc Hoàng](https://github.com/pieberrykinnie/CSA)
 - [Hoàng Phúc Sáng](#)
 - [Trần Hữu Vương Duy](#)
 
