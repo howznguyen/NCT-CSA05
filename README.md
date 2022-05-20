@@ -31,3 +31,7 @@
 
 - (22/04/2022) [Lesson 1](./Lesson%201/)
 - (07/05/2022) [Lesson 2](./Lesson%202/)
+
+## Video
+
+- [OneDrive](https://istoreeduvn-my.sharepoint.com/:f:/g/personal/chenjinguyen_istore_edu_vn/ErqwsF-LktxFoMPDOdy9PqcBRV2BBMywFFOBU0-Cj6Te_Q?e=kjYd3i)
