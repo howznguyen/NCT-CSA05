@@ -59,20 +59,21 @@ class Player:
     def __init__(self,game,player):
         self.game = game
 
-        self.width = 30
-        self.height = 120
-
         self.player = player
         self.speed_y = 10
-        # 
-        self.x = 0
-        if self.player != 1:
-            self.x = self.game.width_screen - self.width
-        self.y = 0
-        #
+
         self.pygame = self.game.pygame
         self.canvas = self.game.canvas
         self.image = self.pygame.image.load("assets/paddle.png")
+        self.rect = self.image.get_rect()
+        self.point = 0
+
+        # 
+        self.rect.x = 0
+        if self.player != 1:
+            self.rect.x = self.game.width_screen - self.rect.width
+        self.rect.y = self.game.height_screen / 2 - self.rect.height / 2
+        #
     
     def event(self):
         pressed = self.game.pygame.key.get_pressed()
@@ -89,19 +90,19 @@ class Player:
 
 
         if pressed[keyUp]:
-            if self.y <= 0:
-                self.y = 0
+            if self.rect.y <= 0:
+                self.rect.y = 0
             else:
-                self.y -= self.speed_y
+                self.rect.y -= self.speed_y
         elif pressed[keyDown]:
-            if self.y >= self.game.height_screen - self.height:
-                self.y = self.game.height_screen - self.height
+            if self.rect.y >= self.game.height_screen - self.rect.height:
+                self.rect.y = self.game.height_screen - self.rect.height
             else:
-                self.y += self.speed_y
+                self.rect.y += self.speed_y
 
 
     def render(self):
-        self.canvas.blit(self.image, (self.x,self.y))
+        self.canvas.blit(self.image, (self.rect.x,self.rect.y))
 
 class Ball:
     def __init__(self,game):
@@ -110,43 +111,51 @@ class Ball:
 
         self.speed_y = random.randint(3, 9)
         self.speed_x = random.randint(3, 9)
-
-        self.width = 20
-        self.height = 20
         
-        self.x = (self.game.width_screen / 2) - (self.width / 2)
-        self.y = random.randint((self.height / 2)    ,   self.game.height_screen  - (self.height / 2))
         #
         self.pygame = self.game.pygame
         self.canvas = self.game.canvas
         self.image = self.pygame.image.load("assets/ball.png")
+        self.rect = self.image.get_rect()
+
+        self.rect.x = (self.game.width_screen / 2) - (self.rect.width / 2)
+        self.rect.y = random.randint((self.rect.height / 2)    ,   self.game.height_screen  - (self.rect.height / 2))
 
     def event(self):
 
-        # Va chạm vào tường phải - trái
-        if self.x >= self.game.width_screen - self.width:
-            self.x = self.game.width_screen - self.width
-            self.speed_x *= -1
+        #Va chạm vào tường phải - trái
+        if self.rect.x >= self.game.width_screen - self.rect.width or self.rect.x <= 0:
+            self.speed_y = random.randint(3, 9)
+            self.speed_x = random.randint(3, 9)
 
-        if self.x <= 0:
-            self.x = 0
+            self.rect.x = (self.game.width_screen / 2) - (self.rect.width / 2)
+            self.rect.y = random.randint((self.rect.height / 2) , self.game.height_screen  - (self.rect.height / 2))
+            
+
+        if self.rect.colliderect(self.game.player_one.rect):
+            self.rect.x = self.game.player_one.rect.width
+            self.speed_x *= -1
+        
+        if self.rect.colliderect(self.game.player_two.rect):
+            self.rect.x = self.game.width_screen - self.game.player_two.rect.width - self.rect.width
             self.speed_x *= -1
 
         # Va chạm vào tường trên - dưới
-        if self.y >= self.game.height_screen - self.height:
-            self.y = self.game.height_screen - self.height
+        if self.rect.y >= self.game.height_screen - self.rect.height:
+            self.rect.y = self.game.height_screen - self.rect.height
             self.speed_y *= -1
 
-        if self.y <= 0:
-            self.y = 0
+        if self.rect.y <= 0:
+            self.rect.y = 0
             self.speed_y *= -1
 
-        self.x += self.speed_x
-        self.y += self.speed_y
+        self.rect.x += self.speed_x
+        self.rect.y += self.speed_y
+        
 
 
     def render(self):
-        self.canvas.blit(self.image, (self.x,self.y))
+        self.canvas.blit(self.image, (self.rect.x,self.rect.y))
 
 pong = Pong()
 pong.start()
