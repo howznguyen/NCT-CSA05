@@ -45,4 +45,4 @@
 
 ## Video
 
-- [OneDrive](https://istoreeduvn-my.sharepoint.com/:f:/g/personal/chenjinguyen_istore_edu_vn/ErqwsF-LktxFoMPDOdy9PqcBRV2BBMywFFOBU0-Cj6Te_Q?e=kjYd3i)
+- [OneDrive](https://diendanbanlait-my.sharepoint.com/:f:/g/personal/chenjinguyen_dulieucuatoi_win/EgAZE8p13qtJqNBEhulSj80BY6rcn5S_iS6HqXJlu1wsSA?e=VHd5fp)
