@@ -15,6 +15,15 @@
 - Liên tục mở cam trong suốt giờ học (Trừ một số trường hợp đặt biệt), __nếu không mở sẽ bị đuổi ra khỏi phòng__
 - Bất cứ yêu cầu hoặc thắc mắc nào thì liên hệ với giảng viên hoặc hỏi trực tiếp trong giờ để được giải đáp.
 
+
+## Tools
+
+- Website SQL Online: [https://sqliteonline.com/](https://sqliteonline.com/)
+
+## Document
+
+- W3Schools: [https://www.w3schools.com/](https://www.w3schools.com/)
+
 ## Danh Sách Học Viên
 
 - [Lê Phúc Minh](https://github.com/Syzen4869/mindx_hw)
@@ -32,6 +41,7 @@
 - (22/04/2022) [Lesson 1](./Lesson%201/)
 - (07/05/2022) [Lesson 2](./Lesson%202/)
 - (14/05/2022 - 21/05/2022) [Lesson 3 - 4](./Lesson%203%20-%204/)
+- (28/05/2022) [Lesson 5](./Lesson%205/)
 
 ## Video
 
