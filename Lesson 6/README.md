@@ -8,6 +8,9 @@
 SELECT <columns>
 FROM <table>
 [WHERE <condition> <AND|OR> <condition> ....] # <condition> : <column> <operator> <value>
+....
+[ORDER BY <column> [ASC|DESC], ...] # ASC: tăng dần, DESC: giảm dần
+[LIMIT <number>]
 ```
 
 
@@ -36,6 +39,58 @@ Ví dụ:
 SELECT *
 FROM HocSinh
 WHERE Truong = 'Nguyễn Văn Trọng';
+```
+
+### IN
+Cấu trúc:
+```
+<column> IN (<value>, <value>, ...)
+```
+Ví dụ:
+```
+SELECT *
+FROM customers
+WHERE WORKING_AREA IN('Mumbai','New York')
+AND ...;
+```
+
+### BETWEEN (số, ngày tháng)
+Cấu trúc
+```
+<column> BETWEEN <value1> AND <value2>
+value1 < value2
+```
+Ví dụ:
+```
+SELECT *
+FROM customers
+WHERE SALARY BETWEEN 5000 AND 10000
+```
+### LIKE (string)
+Cấu trúc:
+```
+<column> LIKE <value> 
+```
+Trong đó: <value> là một chuỗi.
+
+Ví dụ:
+```
+SELECT *
+FROM customers
+WHERE NAME LIKE '%John%';
+```
+
+### NOT
+Cấu trúc:
+```
+NOT ( <condition> )
+<condition> NOT [ LIKE <value> | IN (<value>, <value>, ...) | BETWEEN <value1> AND <value2> ]
+```
+### AS
+- Sử dụng sau lệnh SELECT:
+Cấu trúc:
+```
+<column> AS <alias>
 ```
 
 ## Bài Tập Thực Hành

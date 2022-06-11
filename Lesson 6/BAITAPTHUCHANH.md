@@ -160,6 +160,12 @@ INSERT INTO `orders` (`ORD_NUM`, `ORD_AMOUNT`, `ADVANCE_AMOUNT`, `ORD_DATE`, `CU
 ```
 
 ## Bài Tập:
+
 1. Tìm kiếm các `agents` có trụ sở ở `London` hoặc `New York`
 2. Tìm kiếm các `customer` đang làm việc ở `Mumbai` hoặc `New York`
 3. Tìm kiếm tất cả các `customer` đang ở `Úc` và có `grade (cấp)` là `2`
+4. Tìm kiếm các `agents` có `hoa hồng(COMMISSION)` lớn hơn `0.13`
+5. Tìm kiếm các `agents` có `hoa hồng(COMMISSION)` lớn hơn `0.12` và nhỏ hơn `0.15`
+6. Tìm kiếm các `order` có ngày từ `2008-01-01` đến `2008-01-31`
+7. Tìm kiếm các `customer` có tên chứa `rt`
+8. Tìm kiếm các `customer` không thuộc `India`
