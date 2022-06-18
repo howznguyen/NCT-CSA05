@@ -67,3 +67,5 @@ Câu hỏi:
 - Tính tổng học sinh trong trừng lớp.
 - Tính học sinh giỏi môn lý nhất trong lớp.
 - Tính học sinh giỏi môn hóa nhất trong lớp.
+
+Đáp án: [BTTH1.sql](./BTTH1.sql)
