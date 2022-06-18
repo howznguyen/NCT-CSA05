@@ -1,8 +1,9 @@
 # Bài 7 - Truy Xuất Dữ Liệu (Nâng Cao) trong SQL
 
 
-## File SQL Countries.sql
+## File SQL trong bài
 [countries.sql](./countries.sql)
+[class.sql](./class.sql)
 
 ## Truy Xuất Dữ Liệu trong SQL
 
@@ -17,6 +18,18 @@ FROM <table>
 [LIMIT <number>]
 ```
 ### GROUP BY
+Mệnh đề GROUP BY trong SQL cho phép bạn sắp xếp các hàng của truy vấn theo nhóm. Các nhóm được xác định bởi các cột mà bạn chỉ định trong mệnh đề GROUP BY. Thông thường, GROUP BY được sử dụng để tính tổng theo điều kiện, đếm bản ghi thỏa mãn điều kiện nào đó hoặc tìm dữ liệu MIN, MAX.
+
+
+Cấu trúc:
+```
+GROUP BY <column>, ...
+```
+
+Ví dụ:
+```
+GROUP BY country_code, country_name
+```
 
 
 ### SUM(), MAX(), MIN(), COUNT(), AVG()
@@ -26,7 +39,13 @@ Cấu trúc:
 SELECT [MIN(<column>)||MAX(<column>)||SUM(<column>)||COUNT(<column>)||AVG(<column>)]
 ```
 
+Ví dụ:
+```
+SELECT SUM(population)
+```
+
 ### HAVING
+Mệnh đề HAVING được dùng kết hợp với mệnh đề GROUP BY trong SQL để giới hạn nhóm các hàng trả về, chỉ khi điều kiện được được đáp ứng là TRUE.
 
 Cấu trúc:
 ```
