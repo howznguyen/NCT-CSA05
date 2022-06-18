@@ -23,5 +23,5 @@ VALUES
 ('Nguyen Van B', '12A', '2001', 'Nam', 'Hoa', 8, NULL),
 ('Nguyen Van C', '12B', '2002', 'Nam', 'Hoa', 6, NULL),
 ('Nguyen Van A', '12A', '2000', 'Nam', 'Anh', 3, NULL),
-('Nguyen Van B', '12A', '2001', 'Nam', 'Ly', 5, NULL),
-('Nguyen Van C', '12B', '2002', 'Nam', 'Ly', 7.5, NULL);
+('Nguyen Van B', '12A', '2001', 'Nam', 'Anh', 5, NULL),
+('Nguyen Van C', '12B', '2002', 'Nam', 'Anh', 7.5, NULL);
