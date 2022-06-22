@@ -69,3 +69,14 @@ Câu hỏi:
 - Tính học sinh giỏi môn hóa nhất trong lớp.
 
 Đáp án: [BTTH1.sql](./BTTH1.sql)
+
+### Bài Tập Về Nhà
+Dùng file Class: [countries.sql](./countries.sql)
+
+Câu hỏi:
+- Tính số lượng nước nằm trong 1 `region`
+- Tính số lượng `subregion` nằm trong 1 `region`
+- Hiển thị tên các nước dưới nam bán cầu
+- Số lượng các đồng tiền được sử dụng trong 1 `region`
+- Hiển thị tên các nước có kinh độ từ -20 đến 61
+- Hiển thị tên các `subregion` có kinh độ từ -20 đến 61
