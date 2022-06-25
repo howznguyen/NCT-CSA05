@@ -44,6 +44,7 @@
 - (28/05/2022) [Lesson 5](./Lesson%205/)
 - (11/06/2022) [Lesson 6](./Lesson%206/)
 - (18/06/2022) [Lesson 7](./Lesson%207/)
+- (25/06/2022) [Lesson 8](./Lesson%208/)
 
 ## Video
 
