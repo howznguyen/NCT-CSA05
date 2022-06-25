@@ -71,7 +71,7 @@ Câu hỏi:
 Đáp án: [BTTH1.sql](./BTTH1.sql)
 
 ### Bài Tập Về Nhà
-Dùng file Class: [countries.sql](./countries.sql)
+Dùng file countries: [countries.sql](./countries.sql)
 
 Câu hỏi:
 - Tính số lượng nước nằm trong 1 `region`
