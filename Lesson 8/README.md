@@ -59,11 +59,33 @@ Tạo các bảng như trong hình dưới và tạo dữ liệu cho từng bả
 
 Câu hỏi:
 - Xuất danh sách của 1 hoá đơn bất kì.
+```
+SELECT TITLE, AUTHOR, PRICE, AMOUNT, PRICE * AMOUNT AS 'TOTAL'
+FROM DETAILINVOICE DI
+JOIN BOOK B ON DI.IDBOOK = B.IDBOOK
+WHERE idinvoice = 1
+```
+
 - Xuất danh sách các hoá đơn có tên sách là 'Không gia đình'.
+```
+SELECT DI.IDINVOICE ,TITLE, AUTHOR, PRICE, AMOUNT, PRICE * AMOUNT AS 'TOTAL'
+FROM DETAILINVOICE DI
+JOIN BOOK B ON DI.IDBOOK = B.IDBOOK
+WHERE TITLE = 'Không gia đình'
+```
+
 - Xuất danh sách các hoá đơn có sách giá trị từ 100000 đến 200000.
+```
+SELECT DI.IDINVOICE 
+FROM DETAILINVOICE DI
+JOIN BOOK B ON DI.IDBOOK = B.IDBOOK
+WHERE PRICE BETWEEN 100000 AND 200000
+GROUP BY IDINVOICE
+```
 
 ## Bài tập về nhà
-Sử dụng dữ liệu của bảng trên.
+Sử dụng cấu trúc SQL sau:
+[BaiTap.sql](./BaiTap.sql)
 
 Câu hỏi:
 - Tính tổng số lượng sách của các hoá đơn.
