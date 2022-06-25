@@ -56,3 +56,18 @@ WHERE Truong = 'NH'
 Tạo các bảng như trong hình dưới và tạo dữ liệu cho từng bảng
 
 ![](https://i.imgur.com/SDRh2qL.png)
+
+Câu hỏi:
+- Xuất danh sách của 1 hoá đơn bất kì.
+- Xuất danh sách các hoá đơn có tên sách là 'Không gia đình'.
+- Xuất danh sách các hoá đơn có sách giá trị từ 100000 đến 200000.
+
+## Bài tập về nhà
+Sử dụng dữ liệu của bảng trên.
+
+Câu hỏi:
+- Tính tổng số lượng sách của các hoá đơn.
+- Tính tổng tiền của các hoá đơn.
+- Tính các hoá đơn có sách có chủ đề là 'Khoa học' hoặc 'Văn học'.
+- Tính số lượng sách đã được mua nhiều nhất trong năm 2021.
+- Thêm 1 dòng Chi tiết hoá đơn vào 1 Hoá đơn có sẵn và cập nhật lại tổng tiền của hoá đơn đó.
