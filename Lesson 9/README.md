@@ -92,6 +92,16 @@ data = {
 df = pd.DataFrame(data)
 ```
 
+Cách 3:
+```
+import pandas as pd
+data = {
+    'STT': [1,2,3],
+    'Ten': ['A','B','C']
+}
+df = pd.DataFrame(data)
+```
+
 ## Bài Tập Thực Hành
 
 ```
