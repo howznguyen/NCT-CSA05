@@ -94,14 +94,17 @@ df = pd.DataFrame(data)
 
 ## Bài Tập Thực Hành
 
-Tạo một DataFrame là một danh sách học sinh
-Trong có các cột STT,HoTen,NgaySinh,GioiTinh
-Rồi sau đó lưu dữ liệu của DataFrame đó thành file 'hocsinh.csv'
+```
+Tạo một DataFrame là một danh sách học sinh.  
+Trong có các cột STT,HoTen,NgaySinh,GioiTinh.  
+Rồi sau đó lưu dữ liệu của DataFrame đó thành file 'hocsinh.csv'.  
+```
 
 ## Bài Tập Về Nhà
-
-Tạo một DataFrame là một danh sách học sinh
-Trong có các cột STT,HoTen,NgaySinh,GioiTinh,DiemToan,DiemLy,DiemHoa
-Và lưu 20 giá trị vào trong DataFrame
-Sau đó lưu dữ liệu thành exel file 'hocsinh.xlsx' và csv file 'hocsinh.csv'
-Tiếp theo import lại file csv và hiện thông tin của dataframe đó ( dùng hàm info)
+```
+Tạo một DataFrame là một danh sách học sinh.  
+Trong có các cột STT,HoTen,NgaySinh,GioiTinh,DiemToan,DiemLy,DiemHoa.  
+Và lưu 20 giá trị vào trong DataFrame.  
+Sau đó lưu dữ liệu thành exel file 'hocsinh.xlsx' và csv file 'hocsinh.csv'.  
+Tiếp theo import lại file csv và hiện thông tin của dataframe đó ( dùng hàm info).
+```
