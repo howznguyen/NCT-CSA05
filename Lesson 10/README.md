@@ -40,7 +40,7 @@ print(df['GioiTinh'][df['GioiTinh'] == 'Nam'])
 
 ### Hàm Loc truy xuất dữ liệu theo điều kiện
 
-Tham khảo: (https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.loc.html)[https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.loc.html]
+Tham khảo: [https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.loc.html](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.loc.html)
 
 ```
 import pandas as pd
@@ -50,7 +50,7 @@ print(df.loc[df['GioiTinh'] == 'Nam'])
 
 ### Hàm iLoc truy xuất dữ liệu theo điều kiện
 
-Tham khảo: (https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.iloc.html)[https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.iloc.html]
+Tham khảo: [https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.iloc.html](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.iloc.html)
 
 ```
 import pandas as pd
