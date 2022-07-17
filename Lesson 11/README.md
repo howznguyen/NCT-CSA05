@@ -45,7 +45,7 @@ Ví dụ:
 ```
 import pandas as pd
 df = pd.read_csv('data.csv')
-df.drop(df.index[4])
+df.drop(4)
 ```
 
 ## Bài tập thực hành:
