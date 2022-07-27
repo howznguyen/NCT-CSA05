@@ -1,4 +1,6 @@
+# Vẽ đồ thị trong Python Matplotlib
 
+Tham khảo: [https://matplotlib.org/](https://matplotlib.org/)
 
 
 ## Bài Tập Thực Hành
@@ -9,3 +11,8 @@
         + B (>=6.5)
         + C (>=4)
         + D (<4)
+
+## Bài Tập Về Nhà
+Từ data của bữa trước.
++ Vẽ biểu đồ cột của các môn toán, lý, hoá của các bạn nam và các bạn nữ
++ Vẽ biểu đồ thể hiện phần trăm điểm cao giữa nam và nữ
